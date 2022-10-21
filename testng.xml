@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="demoBlaze.com">
+
+    <test name="demoBlaze.com" parallel="false" preserve-order="true">
+        <classes>
+            <class name="demoBlaze.com.TestsDemoBlaze.TestMainPage">
+                <methods>
+                    <include name="UrlHomePage"/>
+                    <include name="ReloadPage"/>
+                    <include name="testAddToCart"/>
+                </methods>
+
+            </class>
+
+            <class name="demoBlaze.com.TestsDemoBlaze.TestSignup">
+                <methods>
+                    <include name="SignUpTest"/>
+                    <include name="BlankUsername"/>
+                    <include name="CloseButton"/>
+                    <include name="ExitRegistration"/>
+                </methods>
+            </class>
+
+            <class name="demoBlaze.com.TestsDemoBlaze.TestLogin">
+                <methods>
+                    <include name="LogInTest"/>
+                    <include name="WrongPasswordLogIn"/>
+                    <include name="LogOut"/>
+                </methods>
+            </class>
+
+            <class name="demoBlaze.com.TestsDemoBlaze.TestCart">
+                <methods>
+                    <include name="OpenCartTest"/>
+                    <include name="CheckinPaymentAmount"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
