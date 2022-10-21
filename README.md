@@ -19,7 +19,7 @@ All the test classes in Java can be executed by running the testng.xml file.
 
 - Java
 - Selenium
-- Testng
+- TestNG
 - OOP
 - POM
 - Intellij IDE
